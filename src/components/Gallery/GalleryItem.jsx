@@ -1,7 +1,7 @@
-import {GalleryItemBox} from '../styled/galleryStyle.js'
+import { GalleryItemBox } from '../styled/galleryStyle.js'
 
-const GalleryItem = ({item}) => {
-    const {webformatURL, views, downloads,likes, tags, user} = item
+const GalleryItem = ({ item }) => {
+    const { webformatURL, views, downloads, likes, tags, user } = item
     let tag = tags.split(',')
     return (
         <GalleryItemBox>
@@ -14,7 +14,7 @@ const GalleryItem = ({item}) => {
             </ul>
             <p>
                 {
-                    tag.map((ele,idx)=><span key={idx}>#{ele.trim()}</span>)
+                    tag.map((ele, idx) => <span key={idx}>#{ele.trim()}</span>)
                 }
             </p>
         </GalleryItemBox>
