@@ -17,7 +17,6 @@ const GallerySearch = ({ onSearch }) => {
         textReference.current.focus()
     }
 
-
     const memoryDel = (id) => {
         setMemory(memory.filter(item => item.id !== id))
 
